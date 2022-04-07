@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-green-800">
+    <header class="bg-gray-900 text-white text-center py-3">
+      <h1 class="font-bold">BlackJack</h1>
+    </header>
+
+    <section>
+      <div class="mt-2 text-center">
+        <button
+          id="new"
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          New Game
+        </button>
+        <button
+          id="get"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Get Card
+        </button>
+        <button
+          id="stop"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Stop
+        </button>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-4 mt-6">
+      <section class="relative flex justify-center">
+        <div
+          id="sign"
+          class="transition-all duration-700 opacity-0 -translate-y-96 z-10 bg-gray-900 w-6/12 h-40 py-4 absolute text-center rounded flex items-center flex-col"
+        >
+          <img src="" alt="sign" class="w-20 mb-2" />
+          <p class="font-bold text-xl text-white">jugador 1 Gana</p>
+        </div>
+      </section>
+
+      <div id="Player">
+        <h2 class="font-bold text-xl text-white">
+          Player - <small class="value-card">0</small>
+        </h2>
+        <div
+          id="cards-container-player"
+          class="mt-5 w-full h-44 relative flex flex-wrap"
+        ></div>
+      </div>
+
+      <div id="computer" class="mt-5">
+        <h2 class="font-bold text-xl text-white">
+          Computer - <small class="value-card">0</small>
+        </h2>
+        <div
+          id="cards-container-computer"
+          class="mt-5 w-full h-44 relative"
+        ></div>
+      </div>
+    </section>
+    <!-- <script src="./assets/js/underscore-min.js"></script> -->
+    <script src="./assets/js/game.js" type="module"></script>
+  </body>
+</html>
